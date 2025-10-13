@@ -1,7 +1,7 @@
 {
   "runtime": "python3",
   "build": {
-    "install": "pip install -r requirements.txt",
-    "start": "gunicorn app:app"
+    "install": "pip install --upgrade pip && pip install -r requirements.txt",
+    "start": "gunicorn app:app -b 0.0.0.0:5000"
   }
 }
