@@ -1,4 +1,5 @@
 # app.py
+import utils.session
 from flask import Flask, jsonify
 from AI.agent import Prompt_Taker
 
